@@ -24,6 +24,16 @@ Every value inside `*args` and `**kwargs` must be string. After all, before init
 
 **If you have explicitly implemented an interface in the class decorated, it will not get overriden.**
 
+### Diamond problem
+
+If there are multiple implementations of an interface to remap in your config, then they will all get disabled silently.
+
+If you want to get a warning or exception on that, this will be a future feature.
+
+If you want those interfaces back, sorry, you must add them manually.
+
+By the way, if there are many implementation conflicts, you'd better rethink your structure.
+
 ## Example(s)
 
 ```python
