@@ -1,5 +1,5 @@
 
-def remap(*args, **kwargs):
+def remap(*args, ___on_conflict=None, ___output_file=None, **kwargs):
     
     def find_methods(clazz, field_name):
         field = getattr(clazz, field_name)

@@ -17,8 +17,8 @@ import remap_interface.remap as remap
 # some class
 ```
 
-Every non-magic method in field names in `*args` will be mapped to class level.
-If you want to specify the remapping process, do this in `**kwargs`.
+Every method in field names in `*args` will be mapped to a class level method, except for magic ones (whose name starts with '__').
+If you want to specify the remapping process, do it in `**kwargs`.
 
 Every value inside `*args` and `**kwargs` must be string. After all, before initializing a class, every field inside the class doesn't exist. Seperate fields with a '`.`'.
 
